@@ -2,7 +2,7 @@
 
 Official repository of the paper **Unsupervised Transfer Learning via Adversarial Contrastive Training** 
 
-Except for tuning λ for different dataset, all other hyperparameters of model structure and training policy used in our experiments are align with [Whitening for Self-Supervised Representation Learning](https://arxiv.org/abs/2007.06346). The implementation is all conducted in single NVIDIA Tesla V100 and checkpoints are stored in `data` each 100 epochs during training. All trained models are available in `model`.
+Except for tuning λ for different dataset, all other hyperparameters of model structure and training policy used in our experiments are align with [Whitening for Self-Supervised Representation Learning](https://arxiv.org/abs/2007.06346). The implementation is all conducted in single NVIDIA Tesla V100 and checkpoints are stored in `data` each 100 epochs during training. All trained models are available in `models`.
 
 ## Supported Models
 - ACT(Ours)
