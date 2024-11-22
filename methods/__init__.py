@@ -1,10 +1,14 @@
-from .act import ACT, WhiteningACT
+from .act import ACT
+from .w_act import WhiteningACT
 from .contrastive import Contrastive
 from .byol import BYOL
 from .w_mse import WMSE
+from .haochen22 import Haochen22
+from .vicreg import Vicreg
+from .barlow_twins import BarlowTwins
 
 
-METHOD_LIST = ["act", "w_act", "byol", "contrastive", "w_mse"]
+METHOD_LIST = ["act", "wact", "byol", "contrastive", "w_mse", "haochen22", "vicreg", "barlow_twins"]
 
 
 def get_method(name):
@@ -19,3 +23,9 @@ def get_method(name):
         return BYOL
     elif name == "w_mse":
         return WMSE
+    elif name == "haochen22":
+        return Haochen22
+    elif name == "vicreg":
+        return Vicreg
+    elif name == "barlow_twins":
+        return BarlowTwins
